@@ -4,13 +4,15 @@ import PropTypes from "prop-types"
 
 function Nav({ items = [] }) {
   return (
-    <ul>
-      {items.map(item => (
-        <li key={item.name}>
-          <Link to={item.dir}>{item.name}</Link>
-        </li>
-      ))}
-    </ul>
+    <nav>
+      <ul>
+        {items.map(item => (
+          <li key={item.name}>
+            <Link to={item.dir}>{item.name}</Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
   )
 }
 

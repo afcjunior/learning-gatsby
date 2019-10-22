@@ -6,12 +6,12 @@ import PropTypes from "prop-types"
 
 function Header({ title = "From the Front" }) {
   return (
-    <div>
+    <header>
       <h1>
         <Link to="/">{title}</Link>
       </h1>
       <Nav items={navigation} />
-    </div>
+    </header>
   )
 }
 
