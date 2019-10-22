@@ -1,9 +1,12 @@
 import React from "react"
+import Header from "../components/Header/Header"
+import Footer from "../components/Footer/Footer"
 import PropTypes from "prop-types"
 
-function Contact(props) {
+function ContactPage(props) {
   return (
     <div>
+      <Header />
       <h1>Contact</h1>
       <p>
         You can find me in social media{" "}
@@ -12,10 +15,11 @@ function Contact(props) {
         </a>
         .
       </p>
+      <Footer />
     </div>
   )
 }
 
-Contact.propTypes = {}
+ContactPage.propTypes = {}
 
-export default Contact
+export default ContactPage
