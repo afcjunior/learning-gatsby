@@ -1,12 +1,10 @@
 import React from "react"
-import Header from "../components/Header/Header"
-import Footer from "../components/Footer/Footer"
+import Layout from "../components/Layout/Layout"
 import PropTypes from "prop-types"
 
 function ContactPage(props) {
   return (
-    <div>
-      <Header />
+    <Layout>
       <h1>Contact</h1>
       <p>
         You can find me in social media{" "}
@@ -15,8 +13,7 @@ function ContactPage(props) {
         </a>
         .
       </p>
-      <Footer />
-    </div>
+    </Layout>
   )
 }
 
