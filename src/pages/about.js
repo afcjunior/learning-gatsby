@@ -2,11 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
-function IndexPage(props) {
+function About(props) {
   return (
     <div>
-      <h1>From the Front</h1>
-      <h2>Olá! Meu nome é Adalberto, e este é meu blog.</h2>
+      <h1>About</h1>
+      <p>This blog is just a project I'm using to learn gatsby from scratch.</p>
       <p>
         Want to get in touch? <Link to="/contact">Contact me</Link>.
       </p>
@@ -14,6 +14,6 @@ function IndexPage(props) {
   )
 }
 
-IndexPage.propTypes = {}
+About.propTypes = {}
 
-export default IndexPage
+export default About
