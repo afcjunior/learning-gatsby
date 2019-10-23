@@ -4,7 +4,7 @@ export const navigation = [
     dir: "/",
   },
   {
-    name: "About",
+    name: "Sobre",
     dir: "/about",
   },
   {
@@ -12,7 +12,7 @@ export const navigation = [
     dir: "/blog",
   },
   {
-    name: "Contact",
+    name: "Contato",
     dir: "/contact",
   },
 ]
