@@ -1,18 +1,21 @@
 import React from "react"
 import { Link } from "gatsby"
+import { NavContainer } from "./Nav.style"
 import PropTypes from "prop-types"
 
 function Nav({ items = [] }) {
   return (
-    <nav>
+    <NavContainer>
       <ul>
         {items.map(item => (
           <li key={item.name}>
-            <Link to={item.dir}>{item.name}</Link>
+            <Link activeClassName="active" to={item.dir}>
+              {item.name}
+            </Link>
           </li>
         ))}
       </ul>
-    </nav>
+    </NavContainer>
   )
 }
 

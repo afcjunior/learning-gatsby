@@ -7,10 +7,10 @@ import PropTypes from "prop-types"
 function IndexPage(props) {
   return (
     <Layout>
-      <h1>Hello</h1>
-      <h2>Olá! Meu nome é Adalberto, e este é meu blog.</h2>
+      <h1>Bem vindo</h1>
+      <h2>Olá! Meu nome é Adalberto, e este é o meu site.</h2>
       <p>
-        Want to get in touch? <Link to="/contact">Contact me</Link>.
+        Quer entrar em contato? <Link to="/contact">Clica aqui</Link>.
       </p>
     </Layout>
   )

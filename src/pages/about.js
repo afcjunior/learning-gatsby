@@ -6,10 +6,10 @@ import PropTypes from "prop-types"
 function AboutPage(props) {
   return (
     <Layout>
-      <h1>About</h1>
-      <p>This blog is just a project I'm using to learn gatsby from scratch.</p>
+      <h1>Sobre</h1>
+      <p>Este site é apenas um projeto para eu estudar gatsby.</p>
       <p>
-        Want to get in touch? <Link to="/contact">Contact me</Link>.
+        Quer entrar em contato? <Link to="/contact">Clica aqui</Link>.
       </p>
     </Layout>
   )
