@@ -1,16 +1,26 @@
 import React from "react"
 import Nav from "../Nav/Nav"
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import { navigation } from "../../constants/navigation"
 import { HeaderContainer } from "./Header.style"
 
 import PropTypes from "prop-types"
 
-function Header({ title = "From the Front" }) {
+function Header(props) {
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
   return (
     <HeaderContainer>
       <h1>
-        <Link to="/">{title}</Link>
+        <Link to="/">{site.siteMetadata.title}</Link>
       </h1>
       <Nav items={navigation} />
     </HeaderContainer>

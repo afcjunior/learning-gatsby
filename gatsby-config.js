@@ -5,5 +5,9 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: "From the Front",
+    author: "Adalberto Camacho Jr.",
+  },
   plugins: ["gatsby-plugin-styled-components"],
 }
